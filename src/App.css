@@ -1,0 +1,109 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(to bottom, #ceb0d6, #ffffff);
+  /* Gradient background */
+  min-height: 100vh;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  /* Center container horizontally */
+  padding: 20px;
+  background: linear-gradient(to bottom, #a40fd1, #0f2777);
+  /* White background for the container */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, #a40fd1, #0f2777);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  /* Slightly different shade for items */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: calc(100% - 20px);
+  /* Adjust width for padding */
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item input[type="text"] {
+  width: 100%;
+  /* Fill the available space */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.todo-item button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.todo-item button:hover {
+  background-color: #c82333;
+}
+
+.todo-item.completed input[type="text"] {
+  text-decoration: line-through;
+  color: #aaa;
+}

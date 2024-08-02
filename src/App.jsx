@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -59,7 +60,9 @@ function App() {
           ))}
         </ul>
       </div>
+      <Footer />
     </div>
+
   );
 }
 
